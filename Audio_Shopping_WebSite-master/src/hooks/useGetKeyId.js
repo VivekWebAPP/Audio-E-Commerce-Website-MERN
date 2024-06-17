@@ -7,7 +7,7 @@ const useGetKeyId = () => {
         const keyId = async () => {
             setloading(true);
             try {
-                const response = await fetch('https://audio-e-commerce-website-mern-0kf2.onrender.com/payment/getKeyId', {
+                const response = await fetch('https://audio-e-commerce-website-mern-3iyu.onrender.com/payment/getKeyId', {
                     method: "GET", // *GET, POST, PUT, DELETE, etc.
                     mode: "cors", // no-cors, *cors, same-origin
                     cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached

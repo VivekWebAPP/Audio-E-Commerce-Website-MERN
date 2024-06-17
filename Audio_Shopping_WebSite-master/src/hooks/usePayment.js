@@ -4,7 +4,7 @@ const usePayment = () => {
     const [orderDetails, setorderDetails] = useState('')
     const order = async (amount) => {
         try {
-            const response = await fetch('https://audio-e-commerce-website-mern-0kf2.onrender.com/payment/paymentRoute', {
+            const response = await fetch('https://audio-e-commerce-website-mern-3iyu.onrender.com/payment/paymentRoute', {
                 method: "POST", // *GET, POST, PUT, DELETE, etc.
                 mode: "cors", // no-cors, *cors, same-origin
                 cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached

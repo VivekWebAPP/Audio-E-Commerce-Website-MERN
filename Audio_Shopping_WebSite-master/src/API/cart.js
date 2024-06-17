@@ -1,6 +1,6 @@
 export const addToTheCart = async (id, name, image, description, price, authToken) => {
     try {
-        const response = await fetch('https://audio-e-commerce-website-mern-0kf2.onrender.com/cart/addItemsToCart', {
+        const response = await fetch('https://audio-e-commerce-website-mern-3iyu.onrender.com/cart/addItemsToCart', {
             method: "POST",
             mode: "cors",
             headers: {
@@ -23,7 +23,7 @@ export const addToTheCart = async (id, name, image, description, price, authToke
 
 export const fetchAllItems = async (authToken) => {
     try {
-        const response = await fetch('https://audio-e-commerce-website-mern-0kf2.onrender.com/cart/getAllProducts', {
+        const response = await fetch('https://audio-e-commerce-website-mern-3iyu.onrender.com/cart/getAllProducts', {
             method: "GET",
             mode: "cors",
             headers: {
@@ -47,7 +47,7 @@ export const fetchAllItems = async (authToken) => {
 
 export const removeFromCart = async (id, authToken) => {
     try {
-        const response = await fetch(`https://audio-e-commerce-website-mern-0kf2.onrender.com/cart/removeAItem/${id}`, {
+        const response = await fetch(`https://audio-e-commerce-website-mern-3iyu.onrender.com/cart/removeAItem/${id}`, {
             method: "DELETE",
             mode: "cors",
             headers: {
