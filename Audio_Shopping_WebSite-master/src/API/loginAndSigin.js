@@ -1,6 +1,6 @@
 export const login = async (name, email, password) => {
     try {
-        const response = await fetch("https://audio-e-commerce-api.onrender.com/auth/login", {
+        const response = await fetch("https://audio-e-commerce-website-mern-0kf2.onrender.com/auth/login", {
             method: "POST",
             mode: "cors",
             headers: {
@@ -21,7 +21,7 @@ export const login = async (name, email, password) => {
 
 export const sigin = async (name, email, password, phone, address, country) => {
     try {
-        const response = await fetch("https://audio-e-commerce-api.onrender.com/auth/sigin", {
+        const response = await fetch("https://audio-e-commerce-website-mern-0kf2.onrender.com/auth/sigin", {
             method: "POST",
             mode: "cors",
             headers: {

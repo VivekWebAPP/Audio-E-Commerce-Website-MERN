@@ -13,7 +13,7 @@ const useGetUserInfo = () => {
             setloading(true);
             try {
                 if (authToken !== '' && localStorage.getItem('AudioAce_Token')) {
-                    const response = await fetch('https://audio-e-commerce-api.onrender.com/auth/getUserInfo', {
+                    const response = await fetch('https://audio-e-commerce-website-mern-0kf2.onrender.com/auth/getUserInfo', {
                         method: "GET", // *GET, POST, PUT, DELETE, etc.
                         mode: "cors", // no-cors, *cors, same-origin
                         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -29,7 +29,7 @@ const useGetUserInfo = () => {
                     setuserData(res);
                 }
                 else if (authToken === '' && localStorage.getItem('AudioAce_Token')) {
-                    const response = await fetch('http://localhost:5000/auth/getUserInfo', {
+                    const response = await fetch('https://audio-e-commerce-website-mern-0kf2.onrender.com/auth/getUserInfo', {
                         method: "GET", // *GET, POST, PUT, DELETE, etc.
                         mode: "cors", // no-cors, *cors, same-origin
                         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
